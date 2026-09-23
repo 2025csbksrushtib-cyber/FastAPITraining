@@ -1,0 +1,61 @@
+# ==========================================
+# FastAPI & Python Projects .gitignore
+# ==========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environment Variables & Secrets (CRITICAL)
+# ------------------------------------------
+.env
+.env.*
+!.env.example
+secrets.json
+
+# Virtual Environments
+# --------------------
+.venv/
+venv/
+ENV/
+env/
+pythonenv*/
+
+# FastAPI Development & Database
+# ------------------------------
+# Local SQLite databases (default for many FastAPI tutorials)
+*.db
+*.sqlite3
+
+# Log files
+*.log
+
+# Package Management & Dependencies
+# ---------------------------------
+# If you use Poetry
+.poetry/
+# If you use pipenv
+.pipenv/
+
+# Testing & Code Quality
+# ----------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.black
+
+# IDEs and Editors
+# ----------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
